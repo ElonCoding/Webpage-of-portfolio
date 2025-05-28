@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Parikshit Sharma</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/about.css">
+</head>
+
+<body>
+    <div class="background">
+        <video autoplay muted loop id="myVideo" class="background-video">
+            <source src="../assests/binary-code-falling.1920x1080.mp4" type="video/mp4">
+        </video>
+    </div>
+    <navbar>
+        <div class="navbar-logo">
+            <img src="../assests/Screenshot 2025-03-21 180444.png" alt="mylogo" width="100px">
+        </div>
+        <div class="navbar-links">
+            <a href="../index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="auth-btn">
+            <a href="">Login</a>
+            <a href="">Signup</a>
+        </div>
+    </navbar>
+
+    <section class="about-content">
+        <h1>About Me</h1>
+        <p class="gradient-text">
+            Welcome to my portfolio! I'm Parikshit Sharma, a passionate web developer with a love for creating beautiful
+            and functional websites. With a keen eye for design and a strong foundation in web development.
+        </p>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>Skills</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Python3</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Web Design</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Experience</h3>
+                <p>Over 1 years of experience in web development, working on various projects and continuously learning
+                    new technologies and languages.</p>
+            </div>
+
+            <div class="card">
+                <h3>Education</h3>
+                <p>Pursuing Bachelor's Degree in Computer Science Engneering<br>
+                    Specialized training Practices in modern web technologies</p>
+            </div>
+
+            <div class="card">
+                <h3>Interests</h3>
+                <p>Web Development<br>
+                    UI/UX Design<br>
+                    New Technologies<br>
+                    Problem Solving<br>
+                    Research & Development</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Parikshit Sharma. All rights reserved.</p>
+        <style>
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #33333369;
+                color: white;
+            }
+        </style>
+        <p>Contact me at: <a href="mailto:sharmaparikshit405@gmail.com">sharmaparikshit405@gmail.com</a></p>
+        <p>Follow me on <a href="https://www.instagram.com/parikshitsir_artistic/">Instagram</a></p>
+    </footer>
+       
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    
+        <script>
+            const cursorDot = document.querySelector(".cursor-dot");
+            const cursorOutline = document.querySelector(".cursor-outline");
+    
+            window.addEventListener("mousemove", (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+    
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+    
+                cursorOutline.style.left = `${posX}px`;
+                cursorOutline.style.top = `${posY}px`;
+            });
+        </script>
+</body>
+
+</html>
