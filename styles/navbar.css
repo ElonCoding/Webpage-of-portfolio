@@ -62,3 +62,37 @@ navbar {
     max-width: 100%;
     object-fit: cover;
 }
+
+
+@media screen and (max-width: 768px) {
+    navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .navbar-logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin: 10px 0;
+    }
+
+    .auth-btn {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    navbar {
+        width: 95%;
+    }
+
+    .navbar-links a, .auth-btn a {
+        font-size: 0.9em;
+    }
+}
