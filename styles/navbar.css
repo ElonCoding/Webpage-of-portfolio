@@ -64,6 +64,8 @@ navbar {
 }
 
 
+/* Add these media queries at the end of navbar.css */
+
 @media screen and (max-width: 768px) {
     navbar {
         flex-direction: column;

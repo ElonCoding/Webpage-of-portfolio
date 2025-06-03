@@ -144,3 +144,61 @@
 .box:hover {
     transform: translateY(-5px);
 }
+
+@media screen and (max-width: 1024px) {
+    .Hero-Section {
+        padding: 0 30px;
+    }
+
+    .animated-title {
+        font-size: 2.8em;
+    }
+
+    .image-frame img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Hero-Section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .intro-content {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .boxes {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-frame img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .animated-title {
+        font-size: 2em;
+    }
+
+    .typing-text p {
+        font-size: 1.1em;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
